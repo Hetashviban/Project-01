@@ -1,0 +1,134 @@
+/*Linking the fonts which are downloaded in the fonts folder*/
+@font-face {
+    font-family: 'type';
+    src: url('../fonts/typewriter.woff') format('woff'),
+        url('../fonts/typewriter.ttf') format('truetype');
+}
+
+
+.intro {
+    background-image: url(../img/home.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 200px;
+    font-size: 3.5em;
+    color: #fff;
+    margin: 0%;
+    font-family: 'type';
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'type';
+}
+
+/* Adding styling to the button*/
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #9DBDBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-link:hover{
+    background-color: #F3B7AD;
+}
+  
+/*Three columns*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    margin: 0px 10px;
+    padding: 20px;
+    background-color: rgba(158, 189, 186, 0.3);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.column h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.column p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.column a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #9DBDBA;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.column a:hover {
+    background-color: #F3B7AD;
+}
+
+
+
+/* Media queries */
+
+/* Media queries for screen sizes greater than or equal to 1440px */
+@media only screen and (min-width: 1440px) {
+    .intro {
+        height: 800px;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+}
+
+/* Media queries for screen sizes less than or equal to 768px */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .column {
+        flex-basis: 90%;
+        margin: 20px 0px;
+    }
+}
+
+/* Media queries for screen sizes less than or equal to 1024px */
+@media only screen and (max-width: 1024px) {
+    .column {
+        flex-basis: 45%;
+    }
+}

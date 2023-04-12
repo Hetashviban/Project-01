@@ -1,0 +1,105 @@
+<!DOCTYPE html><!-- Doctype declares the version(type) of the document -->
+<html lang="en"> <!-- html is the root of the HTML document and lang defines the language of the elements -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta communicates with the browser and search engines -->
+    <title> Type-in </title><!-- title is a document's title which is shown in a browser's title bar -->
+    <!-- This is the description of the webpage-->
+    <meta name="description" content="Welcome to Type-in! Discover the timeless charm of vintage and modern typewriters. Add to your collection today!">
+    <meta name="robots" content="noindex,nofollow">
+
+    <!--Adding our jQUery library and then our JS file-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/custom.js"> </script>
+
+    <!--Linking our CSS page-->
+    <link rel="stylesheet" href="./css/globalclass.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <!--adding our custom fonts-->
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Tinos:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/ee4bac65e7.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body><!--This is the place where the content of the document goes-->
+    <!--Global header-->
+    <header class="header1 " id="header"> </header>
+
+    <!--Contact form-->
+    <main>
+        <!--Form element-->
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <section class="col1">
+                <h2> Customer feedback form </h2>
+
+                <label> First name </label><br><!-- The user will input their first name-->
+                <div>
+                    <input type="text" required placeholder="First name"> <br>
+                </div>
+
+                <label> Last name </label><br><!-- The user will input their last name-->
+                <div>
+                    <input type="text" required placeholder="Last name"> <br>
+                </div>
+
+                <label> Email </label><br><!--The user will input their email-->
+                <div>
+                    <input type="email" required placeholder="Email"><br>
+                </div>
+
+                <label> Mobile number:</label><br><!--The user will input their contact no-->
+                <div>
+                    <input type="tel" id="telephone" required><br>
+                </div>
+
+                <label> How would you rate our products?</label>
+                <div>
+                    <select name="rate" id="rate">
+                        <option value=""> -- Rate our products -- </option>
+                        <option value="1 star"> 1 star </option>
+                        <option value="2 stars"> 2 stars </option>
+                        <option value="3 stars"> 3 stars </option>
+                        <option value="4 stars"> 4 stars </option>
+                        <option value="5 stars"> 5 stars </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label> How would you describe your experience with our website? </label>
+                    <label for="choice1"><!--Option 1-->
+                        <input type="radio" name="method" value="Great" id="choice1"> Great
+                    </label>
+                    <label for="choice2"><!--Option 2-->
+                        <input type="radio" name="method" value="Okay" id="choice2"> Okay
+                    </label>
+                    <label for="choice3"><!--Option 3-->
+                        <input type="radio" name="method" value="Poor" id="choice3"> Poor
+                    </label>
+                </div>
+                
+                <label> Is there anything else you'd like to share about our product and customer experience? </label>
+                <div>
+                    <textarea name="text" id="text" cols="72" rows="5"> </textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit"><!--Submit button will submit the form-->
+                </div>
+            </section>
+        </form>
+    </main>
+
+    <!--GLobal footer-->
+    <footer id="footer"> </footer>
+</body>
+
+</html>

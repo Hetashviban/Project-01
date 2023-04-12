@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- Doctype declares the version(type) of the document -->
+<html lang="en"> <!-- html is the root of the HTML document and lang defines the language of the elements -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta communicates with the browser and search engines -->
+    <title> Type-in </title> <!-- title is a document's title which is shown in a browser's title bar -->
+    <!-- This is the description of the webpage-->
+    <meta name="description"
+        content="Welcome to Type-in! Discover the timeless charm of vintage and modern typewriters. Add to your collection today!">
+    <meta name="robots" content="noindex,nofollow">
+
+    <!--Adding our jQUery library and then our JS file-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/custom.js"> </script>
+
+    <!--Linking our CSS page-->
+    <link rel="stylesheet" href="./css/globalclass.css">
+    <link rel="stylesheet" href="./css/about.css">
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/ee4bac65e7.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body> <!--This is the place where the content of the document goes-->
+
+    <!--Global header-->
+    <header class="header1 " id="header"> </header>
+
+    <main>
+        <!--This section talks about the history of the business-->
+        <section class="history">
+            <h2> History </h2>
+            <p>
+                Kelsey Hamilton founded type-in in the year 2015 with a vision to sell old and vintage typewriters to
+                the world. With starting with two employees in her own office, she has come a long way.
+                Over the years, our company has grown and has become one of the world's largest seller of typewriters
+                with about 500k customers.
+                In 2019, we received the "Best vintage product seller" award from the prestigious industry publication
+                TOI Magazine.
+                Today, our team consists of over 20 dedicated professionals who are committed to providing our customers
+                with the best possible products and support.
+                We are proud of our journey so far, and we look forward to continuing to innovate and grow in the years
+                to come.
+            </p>
+        </section>
+
+        <!--This section talks about the the members and owner of the company-->
+        <section class="team-members">
+            <h2> Our Team </h2>
+            <div class="team">
+                <div class="ceo">
+                    <img src="./img/member1.png" alt="ceo">
+                    <div class=team-name>Kelsey Hamilton - CEO</div>
+                </div>
+                <div class="cfo">
+                    <img src="./img/member2.jpg" alt="cfo">
+                    <div class="team-name">Madison Paul - CFO</div>
+                </div>
+                <div class="coo">
+                    <img src="./img/member3.jpg" alt="coo">
+                    <div class="team-name">Sia Griffins - COO</div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Information Section-->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Feel free to get in touch with us for any inquiries or questions you may have. You can reach us by phone
+                or email or filling out the contact form </p>
+
+            <!--Address div and using font awesome to link icons-->
+            <div class="contact-info">
+                <div class="contact-block">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Address</h4>
+                    <p>627 Louis street L56 SE5</p>
+                    <p>Barrie Ontario Canada</p>
+                </div>
+
+                <!--Phone number div and using font awesome to link icons-->
+                <div class="contact-block">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Phone</h4>
+                    <p>(376)-387-8735</p>
+                </div>
+
+                <!--email div and using font awesome to link icons-->
+                <div class="contact-block">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>infotypein@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--Global footer-->
+    <footer id="footer"> </footer>
+</body>
+
+</html>

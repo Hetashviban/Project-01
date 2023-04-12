@@ -1,0 +1,199 @@
+/*Linking the fonts which are downloaded in the fonts folder*/
+@font-face {
+    font-family: 'type';
+    src: url('../fonts/typewriter.woff') format('woff'),
+        url('../fonts/typewriter.ttf') format('truetype');
+}
+
+/*Styling to the history part of the page*/
+.history {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    margin: 10px 100px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgba(158, 189, 186, 0.3);
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'type';
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+}
+
+
+/*Styling the team members of the page*/
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team>div {
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+}
+
+.team h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.team img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.team-name {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.team-members {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 30px 100px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    background-color: rgba(158, 189, 186, 0.3);
+}
+
+.team-members h2 {
+    margin-bottom: 20px;
+}
+
+
+
+/*Styling to the contact us part of the page*/
+.contact {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    margin: 20px 100px;
+    border-radius: 10px;
+    background-color: rgba(158, 189, 186, 0.3);
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 0%;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info p {
+    margin: 0%;
+}
+
+.contact-block {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.contact-block i {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-block h4 {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+}
+
+.contact-block p {
+    font-size: 1rem;
+}
+
+
+/*When we hover the images the images will pop up a little*/
+.team>div:before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.team>div:hover:before {
+    opacity: 0.2;
+}
+
+.team>div:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/*Adding media queries to make the page responsive*/
+
+/*This changes will be made when the width is 768px or less*/
+@media only screen and (max-width: 768px) {
+    main {
+        background-image: none;
+    }
+
+    .history,
+    .team-members,
+    .contact {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team>div {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+/*This changes will be made when the width is between 769px and 1024px*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .history,
+    .team-members,
+    .contact {
+        margin: 50px;
+        padding: 50px;
+    }
+
+    .team>div {
+        width: calc(50% - 20px);
+    }
+}

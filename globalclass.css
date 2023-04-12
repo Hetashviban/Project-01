@@ -1,0 +1,288 @@
+/*Linking the fonts which are downloaded in the fonts folder*/
+@font-face {
+    font-family: 'type';
+    src: url('../fonts/typewriter.woff') format('woff'),
+        url('../fonts/typewriter.ttf') format('truetype');
+}
+
+
+* {
+    /*Universal styling*/
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+/*Header styles*/
+.header1 {
+    background-color: #9DBDBA;
+    height: 80px;
+    display: flex;
+    text-align: right;
+}
+
+.header1 .logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.header1 .logo img {
+    width: 200px;
+    height: auto;
+    padding-top: 40px;
+}
+
+.menu {
+    display: flex;
+    font-family: 'type';
+    list-style: none;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.first {
+    margin-left: 450px;
+}
+
+.menu li {
+    margin-right: 55px;
+    margin-top: 25px;
+
+}
+
+.menu li:hover {
+    background-color: #F3B7AD;
+    border: 2px solid #F3B7AD;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #F3B7AD;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #444;
+}
+
+
+/*footer styles*/
+#footer {
+    background-color: #9DBDBA;
+    height: 50px;
+    color: #444;
+    display: flex;
+}
+
+.company {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+.apps {
+    text-align: right;
+    flex-grow: 1;
+    /*This pushes the menu to the right side of the footer*/
+}
+
+.fa-youtube,
+.fa-tiktok,
+.fa-instagram,
+.fa-facebook {
+    padding-top: 15px;
+    font-size: 23px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.apps:hover { /*This changes will happen when the cursor hovers over the apps*/
+    color: #fff;
+}
+
+
+
+
+
+/* Media queries */
+/*Making the header and footer responsive*/
+
+/*This changes will be made to the header and footer when the maximum width is 1440px*/
+@media only screen and (min-width: 1440px) {
+
+    /*footer*/
+    .fa-youtube,
+    .fa-tiktok,
+    .fa-instagram,
+    .fa-facebook {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    /*header*/
+    .first {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+/*This changes will be made to the header and footer when the maximum width is 1024px*/
+@media only screen and (max-width: 1024px) {
+
+    /*footer*/
+    #footer {
+        height: auto;
+    }
+
+    .company {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .apps {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    /*header*/
+    .header1 {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        flex-basis: 100%;
+        /*Flex-basis property is used to specify initial size of a flex-item before remaining space is distributed */
+        text-align: center;
+    }
+
+    .menu {
+        flex-basis: 100%;
+    }
+
+    .menu li {
+        margin: 0%;
+        padding: 15px;
+    }
+
+    .first {
+        margin-left: 0%;
+    }
+}
+
+/*This changes will be made to the header and footer when the minimum width is 768px and maximum width is 1220px*/
+@media only screen and (min-width: 768px) and (max-width: 1220px) {
+
+    /*footer*/
+    #footer {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .company {
+        padding-left: 0%;
+        padding-bottom: 10px;
+        text-align: center;
+        flex-basis: 100%;
+
+    }
+
+    .apps {
+        text-align: center;
+        flex-basis: 100%;
+        padding-bottom: 10px;
+    }
+
+    .fa-youtube,
+    .fa-tiktok,
+    .fa-instagram,
+    .fa-facebook {
+        padding: 10px;
+    }
+
+    /*header*/
+    .header1 {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 21px;
+        text-align: center;
+        border-top: none;
+    }
+
+    .first {
+        margin-left: 0%;
+    }
+}
+
+/*This changes will be made to the header and footer when the maximum width is 620px*/
+@media only screen and (max-width: 620px) {
+
+    /*footer*/
+    .fa-youtube,
+    .fa-tiktok,
+    .fa-instagram,
+    .fa-facebook {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    /*header*/
+    .header1 .logo img {
+        width: 150px;
+        padding-top: 20px;
+    }
+
+    .menu {
+        font-size: 19px;
+    }
+
+    .first {
+        margin-left: 315px;
+    }
+
+    .menu li {
+        margin-right: 28px;
+        margin-top: 20px;
+    }
+
+    .menu li:hover {
+        border-radius: 8px;
+    }
+
+}
+
+/*This changes will be made to the header and footer when the maximum width is 768px*/
+@media only screen and (max-width: 768px) {
+
+    /*footer*/
+    .company {
+        padding-top: 20px;
+    }
+
+    .apps {
+        padding-top: 10px;
+    }
+
+    /*header*/
+
+    .header1 .logo img {
+        width: 200px;
+    }
+
+    .menu li {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,165 @@
+/*Linking the fonts which are downloaded in the fonts folder*/
+@font-face {
+    font-family: 'type';
+    src: url('../fonts/typewriter.woff') format('woff'),
+        url('../fonts/typewriter.ttf') format('truetype');
+}
+
+
+main {
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    /*making it a grid container*/
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    margin: 0%;
+}
+
+.col1 h2 {
+    font-size: 75px;
+    color: #000;
+    font-size: 40px;
+    font-family: 'type';
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.col1 {
+    overflow-y: scroll;
+    /*Creates a scrollbar*/
+    background-color: rgba(255, 255, 255, 0.5);
+    /*Adds the transparent background*/
+    border: 2px solid #fff;
+    font-family: 'Tinos', serif;
+}
+
+/*Column 1*/
+.col1 {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 700px;
+    /*height of the first box*/
+    border-radius: 12px;
+    width: 70%;
+    /*70% of the webpage*/
+}
+
+.col1 div {
+    padding: 15px;
+}
+
+/*making changes to the scrollbar of the first column*/
+.col1::-webkit-scrollbar {
+    width: 10px;
+}
+
+.col1::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.col1::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+}
+
+.col1::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/*Input tags and labels*/
+label {
+    /*Making changes to all the labels used in body element*/
+    font-size: 23px;
+    margin: 0%;
+}
+
+/*making changes to all the input elements select and textarea all at once*/
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1.5px solid;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    /*making changes to the submit button*/
+    background-color: rgba(62, 74, 73, 0.5);
+    border: none;
+    color: #fff;
+    width: 150px;
+    padding: 10px;
+    border-radius: 7px;
+    /*adds roundness to the corners of the box*/
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    color: #000;
+}
+
+
+/*Adding media queries to make the website responsive*/
+/* Small screens */
+@media screen and (max-width: 768px) {
+
+    .col1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
+    }
+
+    .col1 {
+        grid-template-rows: auto;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Medium screens */
+@media screen and (min-width: 768px) and (max-width: 1220px) {
+
+    .col1 {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 80%;
+    }
+
+    .col1 {
+        grid-template-rows: auto;
+        height: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1440px) {
+
+    .col1 {
+        margin-left: 200px;
+        margin-right: 300px;
+        width: 70%;
+    }
+
+    .col1 {
+        grid-template-rows: 50% 50%;
+        height: 500px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+}
